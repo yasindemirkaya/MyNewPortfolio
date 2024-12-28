@@ -1,0 +1,44 @@
+/* pages/index.module.scss */
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.hero {
+    padding: 20px;
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #ecf0f1;
+}
+
+.subtitle {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: #bdc3c7;
+}
+
+.cta {
+    padding: 14px 35px;
+    font-size: 1.2rem;
+    background-color: #714f9e;
+    /* Mor renk */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #8e44ad;
+    }
+}
