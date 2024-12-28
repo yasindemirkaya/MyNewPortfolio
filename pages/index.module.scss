@@ -1,5 +1,4 @@
-/* pages/index.module.scss */
-
+/* Sayfanın tüm alanına yayılacak şekilde sıfırlama */
 .container {
     height: 100vh;
     display: flex;
@@ -9,6 +8,7 @@
     text-align: center;
 }
 
+/* Hero - başlık ve alt başlık stili */
 .hero {
     padding: 20px;
 }
@@ -27,18 +27,18 @@
     color: #bdc3c7;
 }
 
+/* Call to action butonu */
 .cta {
     padding: 14px 35px;
     font-size: 1.2rem;
-    background-color: #714f9e;
-    /* Mor renk */
+    background-color: #9b59b6;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
 
-    &:hover {
-        background-color: #8e44ad;
-    }
+.cta:hover {
+    background-color: #8e44ad;
 }
