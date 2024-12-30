@@ -1,6 +1,7 @@
 import { Montserrat } from 'next/font/google';
-import '../styles/globals.css'; // Global stilleri buraya dahil edin
-import './index.module.scss'; // Modül stilleri burada
+import Layout from '@/components/Layout/Default';
+import '../styles/globals.css';
+import './index.module.scss';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -10,7 +11,9 @@ const montserrat = Montserrat({
 export default function App({ Component, pageProps }) {
   return (
     <div className={montserrat.className}>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </div>
   );
 }

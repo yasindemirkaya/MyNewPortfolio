@@ -27,18 +27,48 @@
     color: #bdc3c7;
 }
 
-/* Call to action butonu */
+// Call to action
+.ctaWrapper {
+    display: inline-block;
+}
+
 .cta {
+    position: relative;
+    display: inline-block;
     padding: 14px 35px;
     font-size: 1.2rem;
-    background-color: #9b59b6;
     color: white;
-    border: none;
-    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid #9b59b6;
+    border-radius: 0;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.cta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #9b59b6;
+    transition: left 0.3s ease;
+}
+
+.cta:hover::before {
+    left: 0;
 }
 
 .cta:hover {
-    background-color: #8e44ad;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cta span {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-weight: 500;
 }
