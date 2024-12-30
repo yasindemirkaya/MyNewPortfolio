@@ -1,0 +1,30 @@
+.socialLinks {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #bdc3c7;
+    /* Başlangıçta gri renk */
+    font-weight: 500;
+    font-size: 18px;
+    transition: color 0.5s ease;
+}
+
+.socialLinks::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #82878a;
+    transition: width 0.5s ease;
+}
+
+.socialLinks:hover {
+    color: #82878a;
+}
+
+.socialLinks:hover::after {
+    width: 100%;
+}

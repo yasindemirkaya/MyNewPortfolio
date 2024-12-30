@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import styles from './index.module.scss';
 import Link from 'next/link';
+import SocialLinks from '@/components/Base/SocialLinks';
 
 export default function Home() {
   return (
@@ -51,8 +52,10 @@ export default function Home() {
           Computer Engineer | Vue.js & Nuxt | React & Next.js | Node.js & Express
         </motion.p>
 
+        <SocialLinks />
+
         <motion.div
-          className={styles.ctaWrapper}
+          className="ctaWrapper"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{
@@ -64,7 +67,7 @@ export default function Home() {
           }}
         >
           <Link href="/about-me" passHref>
-            <motion.button className={styles.cta}>
+            <motion.button className="cta">
               <span>About Me</span>
             </motion.button>
           </Link>
