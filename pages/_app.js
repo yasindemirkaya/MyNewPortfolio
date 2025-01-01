@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react"
+
 import { Montserrat } from 'next/font/google';
 import Layout from '@/components/Layout/Default';
 import '../styles/globals.css';
@@ -13,6 +15,7 @@ export default function App({ Component, pageProps }) {
     <div className={montserrat.className}>
       <Layout>
         <Component {...pageProps} />
+        <Analytics />
       </Layout>
     </div>
   );
